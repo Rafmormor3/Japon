@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata"> 
+    <style>
+        div a{font-size: 20px; font-family: Alata;}
+        div h3{font-size: 25px; font-family: Alata; font-weight: bold;}
+        .principal{margin-left: 17%; text-align: center;}
+        .celdas:hover{background-color: rgb(255, 192, 192);}
+        legend{font-weight: bold;}
+    </style>
+</head>
+<body>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:14%">
+        <h3 class="w3-bar-item">REGIONES</h3>
+        <a href="Main.html" class="w3-bar-item w3-button w3-border-bottom">MENU PRINCIPAL</a>
+        <a href="Kanto.html" class="w3-bar-item w3-button w3-border-bottom">KANTO</a>
+        <a href="Chubu.html" class="w3-bar-item w3-button w3-border-bottom">CHUBU</a>
+        <a href="Kansai.html" class="w3-bar-item w3-button w3-border-bottom">KANSAI</a>
+        <a href="Kyushu.html" class="w3-bar-item w3-button w3-border-bottom">KYUSHU</a>
+        <a href="ValoracionFormulario.html" class="w3-bar-item w3-button w3-border-bottom">VALORACION</a>
+    </div>
+    <div class="principal">
+        <div class="w3-container"><br>
+        <p>
+            <body>
+            <form action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" method="get">
+                <fieldset>
+                    <legend >Datos Personales</legend>
+                    <p>Nombre: <input type="text" name="nombre" class="celdas"></p>
+                    <p>Apellidos: <input type="text" name="nombre" class="celdas"></p>
+                    <p>Email: <input type="email" name="Email" class="celdas"></p>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend>Valoración</legend>
+                        <p>¿Qué le ha parecido la página web?
+                            <select name="menu" class="celdas">
+                                <option value="0">--</option>
+                                <option value="1">Mala</option>
+                                <option value="2">Normal</option>
+                                <option value="3">Buena</option>
+                                <option value="4">Muy buena</option>
+                            </select>
+                      </p><br>
+                      <p>¿Le han entrado ganas de viajar?
+                        <input type="radio" value="1" name="p" >Si
+                        <input type="radio" value="2" name="p" >No
+                      </p><br>
+                      <p>Si usted desea, ¿nos podria indicar que continentes ha viajado?
+                      <p align="center">
+                        <select name="menu" size="6" multiple class="celdas">
+                            <option value="0">América</option>
+                            <option value="1">Europa</option>
+                            <option value="2">Asia</option>
+                            <option value="3">Oceania</option>
+                            <option value="4">África</option>
+                            <option value="5">Antártida</option>
+                        </select>
+                       </p><br>
+                       <p>Después de la información recibida, ¿Cuántas ganastiene usted de ir a Japón?<br>
+                        0 <input type="range" name="rango" min="1" max="10" step="3"> 10
+                       </p><br>
+                       <p>
+                        <p>¿Cúal ha sido la región que más le ha gustado?<br>
+                            <input type="checkbox" name="mujer" value="1" >Kanto
+                            <input type="checkbox" name="mujer" value="1">Chubu
+                            <input type="checkbox" name="mujer" value="1">Kansay
+                            <input type="checkbox" name="mujer" value="1">Kyushu
+                        </p>
+                       </p>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </form>
+        </p>
+        </div>
+    </div>
+</body>
